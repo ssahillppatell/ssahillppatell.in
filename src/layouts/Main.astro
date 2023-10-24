@@ -1,0 +1,15 @@
+---
+import Layout from './Home.astro'
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props
+
+---
+
+<Layout title={title}>
+	<p>Header</p>
+	<slot />
+</Layout>
