@@ -1,9 +1,67 @@
 ---
 import Layout from '../layouts/Home.astro';
+import Avatar from '../components/Avatar.astro';
+import Link from '../components/Link.astro';
+import Footer from '../components/Footer.astro';
+
+import profileData from '../profileData.json';
+import type { LinkProps } from '../types/Link.ts';
+
+const homeNavLinks: Array<LinkProps> = [
+	{
+		text: 'Hire Me',
+		href: '/hire-me',
+		variant: 'contained',
+		openInNewTab: true
+	},
+	{
+		text: 'Resume',
+		href: '/resume',
+		variant: 'outlined',
+		openInNewTab: true
+	},
+	{
+		text: 'Experience',
+		href: '/experience',
+		variant: 'outlined'
+	},
+	{
+		text: 'My Work',
+		href: '/my-work',
+		variant: 'outlined'
+	}
+];
 ---
 
 <Layout title="नमस्कार | Hello">
-	<main>
-		<div class="text-xl">Hello World!</div>
+	<main class="h-screen flex flex-col gap-6 sm:gap-0 sm:justify-between pt-8 sm:pt-16">
+		<div>
+			<div class="flex justify-center mb-8">
+				<Avatar />
+			</div>
+			<div>
+				<h1 class="text-3xl text-center">
+					{profileData.name}
+				</h1>
+				<p class="text-center font-light">
+					{profileData.bio}
+				</p>
+			</div>
+		</div>
+		<div class="flex flex-col gap-6 w-2/3 sm:w-1/2 text-center mx-auto">
+			{
+				homeNavLinks.map(({ text, href, variant, openInNewTab }) => (
+					<Link
+						text={text}
+						href={href}
+						variant={variant}
+						openInNewTab={openInNewTab}
+					/>
+				))
+			}
+		</div>
+		<div class="flex items-end justify-center py-8">
+			<Footer />
+		</div>
 	</main>
 </Layout>

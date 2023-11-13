@@ -1,0 +1,42 @@
+---
+import type { LinkProps } from "../types/Link";
+import Link from "./Link.astro";
+
+const footerLinks: Array<LinkProps> = [
+    {
+        text: 'education',
+        href: '/education',
+        variant: 'text'
+    },
+    {
+        text: 'skills',
+        href: '/skills',
+        variant: 'text'
+    },
+    {
+        text: 'blogs',
+        href: '/blogs',
+        variant: 'text'
+    },
+    {
+        text: 'achievements',
+        href: '/achievements',
+        variant: 'text'
+    },
+    {
+        text: 'contact me',
+        href: '/contact-me',
+        variant: 'text'
+    }
+]
+---
+
+<footer class="w-2/3 sm:w-1/2 flex flex-wrap justify-center m-auto">
+    {
+        footerLinks.map((link, index) =>
+            <span>
+                &nbsp; • <Link {...link} /> 
+            </span>
+        )
+    }
+</footer>
