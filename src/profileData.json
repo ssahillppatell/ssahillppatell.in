@@ -1,4 +1,22 @@
 {
     "name": "Sahil Patel",
-    "bio": "making and breaking software & hardware"
+    "bio": "making and breaking software & hardware",
+    "achievements": [
+        {
+            "title": "Principles Award",
+            "description": "at Annual Townhall event 2023, DP World"
+        },
+        {
+            "title": "Runners Up",
+            "description": "in Prometeo'22 CTF by Whizhack. Was also given a chance to intern with them."
+        },
+        {
+            "title": "AIR 5788",
+            "description": "in JEE Advanced 2018"
+        },
+        {
+            "title": "AIR 8939",
+            "description": "in JEE Mains 2018"
+        }
+    ]
 }
