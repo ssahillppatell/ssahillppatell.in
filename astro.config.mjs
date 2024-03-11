@@ -8,6 +8,5 @@ const isProd = import.meta.env.PROD;
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), vue()],
-  site: isProd ? "https://ssahillppatell.github.io'" : "http://localhost:4321",
-  base: isProd ? "/ssahillppatell.in/" : "/",
+  site: isProd ? "https://ssahillppatell.github.io/ssahillppatell.in/" : "http://localhost:4321"
 });
