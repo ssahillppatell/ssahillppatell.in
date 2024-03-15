@@ -1,13 +1,16 @@
 ---
 import Layout from '../layouts/Home.astro';
 import Avatar from '../components/Avatar.astro';
-import Link from '../components/Link.astro';
+import Link, { type Props as LinkProps } from '../components/Link.astro';
 import Footer from '../components/Footer.astro';
+import SocialMedia from '../components/SocialMedia.astro';
 
-import profileData from '../profileData.json';
-import type { LinkProps } from '../types/Link.ts';
+import ProfileData from '../profile-data.json';
+globalThis.profileData = ProfileData;
 
-const homeNavLinks: Array<LinkProps> = [
+export type NavLinks = LinkProps & { text: string };
+
+const homeNavLinks: Array<NavLinks> = [
 	{
 		text: 'Hire Me',
 		href: '/hire-me',
@@ -34,6 +37,7 @@ const homeNavLinks: Array<LinkProps> = [
 ---
 
 <Layout title="नमस्कार | Hello">
+	<SocialMedia />
 	<main class="h-screen flex flex-col gap-6 sm:gap-0 sm:justify-between pt-8 sm:pt-16">
 		<div>
 			<div class="flex justify-center mb-8">
@@ -41,22 +45,23 @@ const homeNavLinks: Array<LinkProps> = [
 			</div>
 			<div>
 				<h1 class="text-3xl text-center">
-					{profileData.name}
+					{globalThis.profileData.name}
 				</h1>
 				<p class="text-center font-light">
-					{profileData.bio}
+					{globalThis.profileData.bio}
 				</p>
 			</div>
 		</div>
-		<div class="flex flex-col gap-6 w-2/3 sm:w-1/2 text-center mx-auto">
+		<div class="flex flex-col gap-6 w-2/3 sm:w-1/3 text-center mx-auto">
 			{
 				homeNavLinks.map(({ text, href, variant, openInNewTab }) => (
 					<Link
-						text={text}
 						href={href}
 						variant={variant}
 						openInNewTab={openInNewTab}
-					/>
+					>
+					{ text }
+					</Link>
 				))
 			}
 		</div>

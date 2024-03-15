@@ -21,7 +21,7 @@ const { title } = Astro.props;
 		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Open+Sans&display=swap" rel="stylesheet">
 		<title>{title}</title>
 	</head>
-	<body class="bg-offWhite text-primary">
+	<body class="bg-offWhite text-primary overflow-x-hidden">
 		<!-- Import Plum.vue -->
 		<Plum client:only="vue" />
 		<slot />
