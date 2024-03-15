@@ -1,9 +1,10 @@
 ---
-import type { LinkProps } from '../types/Link';
-
-type Props = LinkProps
-
-const { text, href, variant, openInNewTab = false } = Astro.props
+export type Props = {
+    href: string,
+    variant: 'contained' | 'outlined' | 'text',
+    openInNewTab?: boolean
+}
+const { href, variant, openInNewTab = false } = Astro.props
 
 const classes = {
     contained: 'bg-primary text-white px-4 py-3',
@@ -21,7 +22,7 @@ const classes = {
         ${classes[variant]}
     `}
 >
-    { text }
+    <slot />
     {
         openInNewTab && (
             <svg

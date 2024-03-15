@@ -1,8 +1,8 @@
 ---
-import type { LinkProps } from "../types/Link";
+import type { NavLinks } from "../pages/index.astro";
 import Link from "./Link.astro";
 
-const footerLinks: Array<LinkProps> = [
+const footerLinks: Array<NavLinks> = [
     {
         text: 'education',
         href: '/education',
@@ -35,7 +35,13 @@ const footerLinks: Array<LinkProps> = [
     {
         footerLinks.map((link, index) =>
             <span>
-                &nbsp; • <Link {...link} /> 
+                &nbsp;{ index ? '•' : null} &nbsp;
+                <Link
+                    href={link.href}
+                    variant={link.variant}
+                >
+                    {link.text}
+                </Link> &nbsp;
             </span>
         )
     }

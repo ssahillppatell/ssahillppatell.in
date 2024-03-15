@@ -1,0 +1,58 @@
+---
+
+const socials = [
+    {
+        name: 'GitHub',
+        icon: 'github',
+        link: 'https://www.github.com/ssahillppatell'
+    },
+    {
+        name: 'Instagram',
+        icon: 'instagram',
+        link: 'https://www.instagram.com/pagaldraws'
+    },
+    {
+        name: 'Twitter',
+        icon: 'twitter',
+        link: 'https://www.twitter.com/pagaldraws'
+    },
+    {
+        name: 'LinkedIn',
+        icon: 'linkedin',
+        link: 'https://www.linkedin.com/in/ssahillppatell'
+    }
+]
+
+
+---
+<aside>
+    <div
+        class="absolute top-6 px-4 py-4 bg-primary rounded-md flex flex-col gap-2"
+        style={{
+            transition: 'right 0.3s',
+            right: '-3.7rem'
+        }}
+    >
+        {
+            socials.map((social, index) => (
+                <a href={social.link} target="_blank" rel="noopener noreferrer">
+                    <img src=`icons/${social.icon}.svg` />
+                </a>
+            ))
+        }
+    </div>
+    <script>
+        let isSocialOpen = false;
+
+        function toggleSocial() {
+            isSocialOpen = !isSocialOpen;
+            if (isSocialOpen) {
+                document.querySelector('aside > div').style.right = '-3.7rem';
+            } else {
+                document.querySelector('aside > div').style.right = '-0.25rem';
+            }
+        }
+        
+        document.querySelector('aside').addEventListener('click', toggleSocial);
+    </script>
+</aside>
