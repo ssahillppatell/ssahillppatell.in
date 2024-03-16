@@ -1,6 +1,28 @@
 {
     "name": "Sahil Patel",
     "bio": "making and breaking software & hardware",
+    "socials": [
+        {
+            "name": "GitHub",
+            "icon": "github",
+            "link": "https://www.github.com/ssahillppatell"
+        },
+        {
+            "name": "Instagram",
+            "icon": "instagram",
+            "link": "https://www.instagram.com/pagaldraws"
+        },
+        {
+            "name": "Twitter",
+            "icon": "twitter",
+            "link": "https://www.twitter.com/pagaldraws"
+        },
+        {
+            "name": "LinkedIn",
+            "icon": "linkedin",
+            "link": "https://www.linkedin.com/in/ssahillppatell"
+        }
+    ],
     "achievements": [
         {
             "title": "Principles Award",

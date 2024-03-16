@@ -1,40 +1,15 @@
 ---
-
-const socials = [
-    {
-        name: 'GitHub',
-        icon: 'github',
-        link: 'https://www.github.com/ssahillppatell'
-    },
-    {
-        name: 'Instagram',
-        icon: 'instagram',
-        link: 'https://www.instagram.com/pagaldraws'
-    },
-    {
-        name: 'Twitter',
-        icon: 'twitter',
-        link: 'https://www.twitter.com/pagaldraws'
-    },
-    {
-        name: 'LinkedIn',
-        icon: 'linkedin',
-        link: 'https://www.linkedin.com/in/ssahillppatell'
-    }
-]
-
-
 ---
-<aside>
+<aside class="absolute w-20 h-1/3 top-0 right-0 overflow-hidden">
     <div
         class="absolute top-6 px-4 py-4 bg-primary rounded-md flex flex-col gap-2"
         style={{
             transition: 'right 0.3s',
-            right: '-3.7rem'
+            right: '-4rem'
         }}
     >
         {
-            socials.map((social, index) => (
+            globalThis.profileData.socials.map((social) => (
                 <a href={social.link} target="_blank" rel="noopener noreferrer">
                     <img src=`icons/${social.icon}.svg` />
                 </a>
@@ -43,14 +18,15 @@ const socials = [
     </div>
     <script>
         let isSocialOpen = false;
+        const socialWidget = document.querySelector<HTMLDivElement>('aside > div')
 
         function toggleSocial() {
-            isSocialOpen = !isSocialOpen;
             if (isSocialOpen) {
-                document.querySelector('aside > div').style.right = '-3.7rem';
+                socialWidget.style.right = '-4rem';
             } else {
-                document.querySelector('aside > div').style.right = '-0.25rem';
+                socialWidget.style.right = '-0.25rem';
             }
+            isSocialOpen = !isSocialOpen;
         }
         
         document.querySelector('aside').addEventListener('click', toggleSocial);
