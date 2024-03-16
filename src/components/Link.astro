@@ -1,15 +1,15 @@
 ---
 export type Props = {
     href: string,
-    variant: 'contained' | 'outlined' | 'text',
+    variant?: 'contained' | 'outlined' | 'text',
     openInNewTab?: boolean
 }
-const { href, variant, openInNewTab = false } = Astro.props
+const { href, variant = 'text', openInNewTab = false } = Astro.props
 
 const classes = {
-    contained: 'bg-primary text-white px-4 py-3',
-    outlined: 'border border-primary text-primary px-4 py-3',
-    text: 'text-primary',
+    contained: 'rounded bg-primary text-white px-4 py-3',
+    outlined: 'rounded border border-primary px-4 py-3',
+    text: '',
 }
 ---
 
@@ -17,9 +17,10 @@ const classes = {
     href={ href }
     target={ openInNewTab ? '_blank' : '' }
     class={`
-        relative rounded
+        relative
         ${variant != 'text' ? 'hover:ring-2 hover:ring-primary' : ''}
         ${classes[variant]}
+        ${openInNewTab ? 'flex items-center justify-center' : ''}
     `}
 >
     <slot />
