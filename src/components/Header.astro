@@ -12,7 +12,7 @@ const navDropDownMenuLinks: Array<NavLinks & {key: string}> = [
         text: 'HIRE ME!',
         href: '/hire-me',
         openInNewTab: true,
-        key: 'hire-me'
+        key: 'hire me'
     },
     {
         text: 'EXPERIENCE',
@@ -33,7 +33,7 @@ const navDropDownMenuLinks: Array<NavLinks & {key: string}> = [
 
 ---
 
-<div class="w-screen overflow-hidden">
+<div class="woverflow-hidden">
   <div class="flex justify-between px-4 py-6 items-center">
     <Link href="/" variant="text">
       <svg
@@ -51,7 +51,7 @@ const navDropDownMenuLinks: Array<NavLinks & {key: string}> = [
 
     <span class="font-extrabold">{title}</span>
 
-    <button class="w-10 h-3 flex items-center">
+    <button id="hamburgerMenu" class="w-10 h-3 flex items-center">
       <svg
         width="39"
         height="24"
@@ -67,18 +67,18 @@ const navDropDownMenuLinks: Array<NavLinks & {key: string}> = [
   </div>
 
   <nav
-    class="absolute w-screen overflow-hidden top-23 "
+    class="absolute w-full overflow-x-hidden top-23 pointer-events-none"
   >
     <ul
-        class="flex flex-col transition-transform duration-300 ease-in-out"
+        class="flex flex-col transition-transform duration-300 ease-in-out pointer-events-auto"
         style={{
           transform: "translateX(100%)",
         }}
     >
       {
         navDropDownMenuLinks.map((link) => (
-          <li class=`bg-primary text-center py-4 ${title === link.key ? 'text-white border border-y-1': 'text-white/50'}`>
-            <Link href={link.href} variant="text" openInNewTab={link.openInNewTab}>{link.text}</Link>
+          <li class={`bg-primary text-center py-4 ${title === link.key ? 'text-white border border-y-1': 'text-white/50'}`}>
+            <Link tabIndex={-1} href={link.href} variant="text" openInNewTab={link.openInNewTab}>{link.text}</Link>
         </li>
         ))
       }
@@ -87,14 +87,18 @@ const navDropDownMenuLinks: Array<NavLinks & {key: string}> = [
 
   <script>
     let isHamMenuOpen = false;
-    const button = document.querySelector("button");
+    const button = document.getElementById("hamburgerMenu");
     const navUl = document.querySelector<HTMLUListElement>("nav > ul");
+    const navLinks = document.querySelectorAll<HTMLAnchorElement>("nav > ul > li > a");
 
     button.addEventListener("click", () => {
       isHamMenuOpen = !isHamMenuOpen;
 
       if (isHamMenuOpen) {
         navUl.style.transform = "translateX(0)";
+        navLinks.forEach((link) => {
+          link.tabIndex = 0;
+        });
         button.innerHTML = `
           <svg width="45" height="45" viewBox="0 0 45 45" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <rect x="9.12134" y="8" width="39" height="3" rx="1.5" transform="rotate(45 9.12134 8)" fill="#5B98F4"/>
@@ -103,6 +107,9 @@ const navDropDownMenuLinks: Array<NavLinks & {key: string}> = [
       `;
       } else {
         navUl.style.transform = "translateX(100%)";
+        navLinks.forEach((link) => {
+          link.tabIndex = -1;
+        });
         button.innerHTML = `
           <svg width="39" height="24" viewBox="0 0 39 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <rect width="39" height="3" rx="1.5"/>
