@@ -5,7 +5,7 @@ import Link, { type Props as LinkProps } from '../components/Link.astro';
 import Footer from '../components/Footer.astro';
 import SocialMedia from '../components/SocialMedia.astro';
 
-import ProfileData from '../profile-data.json';
+import ProfileData from '../../profile-data.json';
 globalThis.profileData = ProfileData;
 
 export type NavLinks = LinkProps & { text: string };

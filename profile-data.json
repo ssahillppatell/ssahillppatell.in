@@ -1,0 +1,206 @@
+{
+    "name": "Sahil Patel",
+    "bio": "making and breaking software & hardware",
+    "socials": [
+        {
+            "name": "GitHub",
+            "icon": "github",
+            "link": "https://www.github.com/ssahillppatell"
+        },
+        {
+            "name": "Instagram",
+            "icon": "instagram",
+            "link": "https://www.instagram.com/pagaldraws"
+        },
+        {
+            "name": "Twitter",
+            "icon": "twitter",
+            "link": "https://www.twitter.com/pagaldraws"
+        },
+        {
+            "name": "LinkedIn",
+            "icon": "linkedin",
+            "link": "https://www.linkedin.com/in/ssahillppatell"
+        }
+    ],
+    "achievements": [
+        {
+            "title": "Principles Award",
+            "description": "at Annual Townhall event 2023, DP World"
+        },
+        {
+            "title": "Runners Up",
+            "description": "in Prometeo'22 CTF by Whizhack. Was also given a chance to intern with them."
+        },
+        {
+            "title": "AIR 5788",
+            "description": "in JEE Advanced 2018"
+        },
+        {
+            "title": "AIR 8939",
+            "description": "in JEE Mains 2018"
+        }
+    ],
+    "education": [
+        {
+            "level": "Graduation",
+            "years": "2018-22",
+            "degree": "B.Tech",
+            "branch": "Computer Science & Engineering",
+            "institute": "IIT Jodhpur",
+            "cgpa": "7.76",
+            "courses": ["Discrete Mathematics", "Digital Logic & Design", "Data Structures & Algorithms", "Object Oriented Analysis & Design", "Computer Organization & Architecture", "Theory of Computation", "Software Engineering", "Computer Networks", "Artifical Intelligence", "Database Systems", "Compiler Design", "Operating Systems"]
+        },
+        {
+            "level": "Higher Secondary",
+            "years": "2018",
+            "degree": "CBSE",
+            "institute": "Puranchand Vidya Niketan",
+            "percentage": "91.6",
+            "courses": ["Physics", "Chemistry", "Mathematics", "Computer Science", "English Core"]
+        },
+        {
+            "level": "Secondary School",
+            "years": "2016",
+            "degree": "CBSE",
+            "institute": "Puranchand Vidya Niketan",
+            "cgpa": "9.6",
+            "courses": []
+        }
+    ],
+    "certifications": [
+        {
+            "title": "D3JS",
+            "link": "https://drive.google.com/file/d/1iaRzLisTLK9u80O6UfaiinW3Sz8Aznu2/view?usp=drive_link"
+        },
+        {
+            "title": "Docker",
+            "link": "https://drive.google.com/file/d/1UNL9P39-V3Ru80DFd878dQXjnw2T5NY2/view?usp=drive_link"
+        },
+        {
+            "title": "Shopify",
+            "link": "https://drive.google.com/file/d/1QwUO0gipQ2wUc1REj1QzjRXi0ebF5uEM/view?usp=drive_link"
+        }
+    ],
+    "learning": ["Blender", "Three.js", "Verilog", "React Native", "Inkscape"],
+    "skills": [
+        {
+            "category": "Programming",
+            "items": [
+                {
+                    "name": "C",
+                    "info": "Intermediate"
+                },
+                {
+                    "name": "Javascript",
+                    "info": "2021-01-01"
+                },
+                {
+                    "name": "Typescript",
+                    "info": "2022-01-01"
+                },
+                {
+                    "name": "Golang",
+                    "info": "Beginner"
+                }
+            ]
+        },
+        {
+            "category": "Web Development",
+            "items": [
+                {
+                    "name": "Vue JS",
+                    "info": "2021-01-01"
+                },
+                {
+                    "name": "Node JS",
+                    "info": "2021-01-01"
+                },
+                {
+                    "name": "Tailwind CSS",
+                    "info": "2022-01-01"
+                },
+                {
+                    "name": "React",
+                    "info": "2022-01-01"
+                },
+                {
+                    "name": "Next JS",
+                    "info": "2023-06-01"
+                },
+                {
+                    "name": "Astro JS",
+                    "info": "2023-06-01"
+                }
+            ]
+        },
+        {
+            "category": "DevOps & Tools",
+            "items": [
+                {
+                    "name": "Git",
+                    "info": "2021-01-01"
+                },
+                {
+                    "name": "Docker",
+                    "info": "Intermediate"
+                },
+                {
+                    "name": "Kubernetes",
+                    "info": "Beginner"
+                },
+                {
+                    "name": "Github Actions",
+                    "info": "Intermediate"
+                }
+            ]
+        },
+        {
+            "category": "Database",
+            "items": [
+                {
+                    "name": "MongoDB",
+                    "info": "2021-01-01"
+                },
+                {
+                    "name": "PostgreSQL",
+                    "info": "2022-01-01"
+                },
+                {
+                    "name": "MySQL",
+                    "info": "2022-01-01"
+                }
+            ]
+        },
+        {
+            "category": "Desigining",
+            "items": [
+                {
+                    "name": "Figma",
+                    "info": "2021-01-01"
+                },
+                {
+                    "name": "daVinci Resolve",
+                    "info": "Beginner"
+                },
+                {
+                    "name": "Adobe Photoshop",
+                    "info": "Beginner"
+                }
+            ]
+        },
+        {
+            "category": "Others",
+            "items": [
+                {
+                    "name": "D3JS",
+                    "info": "2023-01-01"
+                },
+                {
+                    "name": "Shopify",
+                    "info": "Beginner"
+                }
+            ]
+        }
+    ]
+}

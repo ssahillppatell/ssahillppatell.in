@@ -2,9 +2,10 @@
 export type Props = {
     href: string,
     variant?: 'contained' | 'outlined' | 'text',
-    openInNewTab?: boolean
+    openInNewTab?: boolean,
+    tabIndex?: number
 }
-const { href, variant = 'text', openInNewTab = false } = Astro.props
+const { href, variant = 'text', openInNewTab = false, tabIndex = 0 } = Astro.props
 
 const classes = {
     contained: 'rounded bg-primary text-white px-4 py-3',
@@ -22,6 +23,7 @@ const classes = {
         ${classes[variant]}
         ${openInNewTab ? 'flex items-center justify-center' : ''}
     `}
+    tabindex={ tabIndex }
 >
     <slot />
     {

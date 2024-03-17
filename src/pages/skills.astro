@@ -4,7 +4,33 @@ import Layout from '../layouts/Main.astro'
 ---
 
 <Layout title="skills">
-    <article class="min-h-screen">
-        Skills
+    <article class="flex flex-col gap-6 sm:gap-6 sm:w-1/3 mx-6 sm:mx-auto min-h-screen">
+        {
+            globalThis.profileData.skills.map((skill) => (
+                <section>
+                    <h3 class="text-xl font-bold uppercase">{skill.category}</h3>
+                    <div class="grid grid-cols-2 gap-2">
+                    {
+                        skill.items.map((item) => (
+                            <div class="grid grid-cols-[40px_1fr] grid-rows-2 w-fit">
+                                <img
+                                    src={`/icons/${item.name}.svg`}
+                                    alt={item.name}
+                                    class="w-8 h-8 row-span-2"
+                                    title="Icon from svgrepo.com"
+                                />
+                                <p class="text-sm">{item.name}</p>
+                                <p class="text-xs -mt-1">
+                                    {
+                                        isNaN(Date.parse(item.info)) ? item.info : `${new Date().getFullYear() - new Date(item.info).getFullYear()} yr`
+                                    }
+                                </p>
+                            </div>
+                        ))
+                    }
+                    </div>
+                </section>
+            ))
+        }
     </article>
 </Layout>
