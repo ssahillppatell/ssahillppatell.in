@@ -3,11 +3,6 @@
     "bio": "making and breaking software & hardware",
     "socials": [
         {
-            "name": "email",
-            "icon": "email",
-            "value": "me@ssahillppatell.in"
-        },
-        {
             "name": "GitHub",
             "icon": "github",
             "link": "https://www.github.com/ssahillppatell"
@@ -21,6 +16,11 @@
             "name": "LinkedIn",
             "icon": "linkedin",
             "link": "https://www.linkedin.com/in/ssahillppatell"
+        },
+        {
+            "name": "mastodon",
+            "icon": "mastodon",
+            "link": "https://mastodon.social/@ssahillppatell"
         }
     ],
     "achievements": [
@@ -49,7 +49,7 @@
             "branch": "Computer Science & Engineering",
             "institute": "IIT Jodhpur",
             "cgpa": "7.76",
-            "courses": ["Discrete Mathematics", "Digital Logic & Design", "Data Structures & Algorithms", "Object Oriented Analysis & Design", "Computer Organization & Architecture", "Theory of Computation", "Software Engineering", "Computer Networks", "Artifical Intelligence", "Database Systems", "Compiler Design", "Operating Systems"]
+            "courses": ["Discrete Mathematics", "Digital Logic & Design", "Signals & Sytems", "Data Structures & Algorithms", "Object Oriented Analysis & Design", "Computer Organization & Architecture", "Theory of Computation", "Software Engineering", "Computer Networks", "Artifical Intelligence", "Database Systems", "Compiler Design", "Operating Systems", "Data Communication", "Algorithm Design & Analysis", "introduction to Game Theory", "Computer Graphics", "Cyber Security"]
         },
         {
             "level": "Higher Secondary",
