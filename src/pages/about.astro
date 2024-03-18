@@ -14,7 +14,7 @@ import Layout from '../layouts/Main.astro'
             {
                 globalThis.profileData.contacts.map((contact) => (
                     <a href={contact.value} target="_blank" rel="noopener noreferrer">
-                        <img src={`icons/${contact.icon}.svg`} alt={contact.name} class="text-primary" />
+                        <img src={`/icons/${contact.icon}.svg`} alt={contact.name} class="text-primary" />
                     </a>
                 ))
             }

@@ -24,7 +24,7 @@ import Layout from "../layouts/Main.astro";
             item.courses.length ? (
               <div>
                 <button id={`dialog-open-btn-${index}`} class="underline italic">courses</button>
-                <dialog id={`dialog-${index}`} class="relative w-full sm:w-1/3 text-primary rounded p-4">
+                <dialog id={`dialog-${index}`} class="relative w-full sm:w-1/3 text-primary rounded p-4 backdrop:bg-black/50">
                   <button id={`dialog-close-btn-${index}`} class="absolute top-2 right-2">
                     <svg width="20" height="20" viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <rect x="9.12134" y="8" width="39" height="3" rx="1.5" transform="rotate(45 9.12134 8)" fill="#5B98F4"/>
