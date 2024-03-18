@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Main.astro'
+---
+
+<Layout title="about">
+    <article class="flex flex-col gap-4 sm:w-1/3 mx-6 sm:mx-auto min-h-screen">
+        <section>
+            { globalThis.profileData.about }
+        </section>
+        <section class="text-justify">
+            the best way to reach me is via <a href="mailto:me@ssahillppatell.in" class="underline italic">email</a>. The second best way is to call my name on a mountain top, but that's a bit harder to do.
+        </section>
+        <section class="flex justify-center gap-4">
+            {
+                globalThis.profileData.contacts.map((contact) => (
+                    <a href={contact.value} target="_blank" rel="noopener noreferrer">
+                        <img src={`icons/${contact.icon}.svg`} alt={contact.name} class="text-primary" />
+                    </a>
+                ))
+            }
+        </section>
+    </article>
+</Layout>

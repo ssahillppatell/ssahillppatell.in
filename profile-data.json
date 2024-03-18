@@ -3,6 +3,11 @@
     "bio": "making and breaking software & hardware",
     "socials": [
         {
+            "name": "email",
+            "icon": "email",
+            "value": "me@ssahillppatell.in"
+        },
+        {
             "name": "GitHub",
             "icon": "github",
             "link": "https://www.github.com/ssahillppatell"
@@ -11,11 +16,6 @@
             "name": "Instagram",
             "icon": "instagram",
             "link": "https://www.instagram.com/pagaldraws"
-        },
-        {
-            "name": "Twitter",
-            "icon": "twitter",
-            "link": "https://www.twitter.com/pagaldraws"
         },
         {
             "name": "LinkedIn",
@@ -173,7 +173,7 @@
             ]
         },
         {
-            "category": "Desigining",
+            "category": "Designing",
             "items": [
                 {
                     "name": "Figma",
@@ -201,6 +201,51 @@
                     "info": "Beginner"
                 }
             ]
+        }
+    ],
+    "experiences": [
+        {
+            "title": "SDE Fullstack",
+            "company": "DP World",
+            "date_of_joining": "2022-07-01",
+            "skills": ["Node JS", "Javascript", "Typescript", "React", "Next JS", "PostgreSQL", "Docker", "Kubernetes", "Figma", "daVinci Resolve", "Azure"]
+        },
+        {
+            "title": "CTO/Co-Founder",
+            "company": "Mathrithms",
+            "date_of_joining": "2021-01-01",
+            "date_of_leaving": "2022-06-30",
+            "skills": ["Vue JS", "Node JS", "MongoDB", "Tailwind CSS", "Figma", "Docker", "Github Actions", "PostgreSQL", "Python", "React", "Javascript", "Typescript"]
+        },
+        {
+            "title": "SDE Intern",
+            "company": "Startoon Labs",
+            "date_of_joining": "2020-06-01",
+            "date_of_leaving": "2020-06-30",
+            "skills": ["Adobe XD", "PHP", "Bootstrap"]
+        }
+    ],
+    "about": "Firm beliver in FAFO!",
+    "contacts": [
+        {
+            "name": "email",
+            "icon": "email-primary",
+            "value": "me@ssahillppatell.in"
+        },
+        {
+            "name": "linkedin",
+            "icon": "linkedin-primary",
+            "value": "https://www.linkedin.com/in/ssahillppatell"
+        },
+        {
+            "name": "mastodon",
+            "icon": "mastodon-primary",
+            "value": "https://mastodon.social/@ssahillppatell"
+        },
+        {
+            "name": "github",
+            "icon": "github-primary",
+            "value": "https://www.github.com/ssahillppatell"
         }
     ]
 }
