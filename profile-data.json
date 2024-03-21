@@ -4,22 +4,22 @@
     "socials": [
         {
             "name": "GitHub",
-            "icon": "github",
+            "icon": "github-white",
             "link": "https://www.github.com/ssahillppatell"
         },
         {
             "name": "Instagram",
-            "icon": "instagram",
+            "icon": "instagram-white",
             "link": "https://www.instagram.com/pagaldraws"
         },
         {
             "name": "LinkedIn",
-            "icon": "linkedin",
+            "icon": "linkedin-white",
             "link": "https://www.linkedin.com/in/ssahillppatell"
         },
         {
             "name": "mastodon",
-            "icon": "mastodon",
+            "icon": "mastodon-white",
             "link": "https://mastodon.social/@ssahillppatell"
         }
     ],
@@ -49,7 +49,7 @@
             "branch": "Computer Science & Engineering",
             "institute": "IIT Jodhpur",
             "cgpa": "7.76",
-            "courses": ["Discrete Mathematics", "Digital Logic & Design", "Signals & Sytems", "Data Structures & Algorithms", "Object Oriented Analysis & Design", "Computer Organization & Architecture", "Theory of Computation", "Software Engineering", "Computer Networks", "Artifical Intelligence", "Database Systems", "Compiler Design", "Operating Systems", "Data Communication", "Algorithm Design & Analysis", "introduction to Game Theory", "Computer Graphics", "Cyber Security"]
+            "courses": ["Discrete Mathematics", "Digital Logic & Design", "Signals & Sytems", "Data Structures & Algorithms", "Object Oriented Analysis & Design", "Computer Organization & Architecture", "Theory of Computation", "Software Engineering", "Computer Networks", "Artifical Intelligence", "Database Systems", "Compiler Design", "Operating Systems", "Data Communication", "Algorithm Design & Analysis", "Introduction to Game Theory", "Computer Graphics", "Cyber Security"]
         },
         {
             "level": "Higher Secondary",
@@ -194,7 +194,7 @@
             "items": [
                 {
                     "name": "D3JS",
-                    "info": "2023-01-01"
+                    "info": "Beginner"
                 },
                 {
                     "name": "Shopify",
@@ -229,23 +229,104 @@
     "contacts": [
         {
             "name": "email",
-            "icon": "email-primary",
-            "value": "me@ssahillppatell.in"
+            "icon": "email",
+            "value": "ssahillppatell+in@gmail.com"
         },
         {
             "name": "linkedin",
-            "icon": "linkedin-primary",
+            "icon": "linkedin",
             "value": "https://www.linkedin.com/in/ssahillppatell"
         },
         {
             "name": "mastodon",
-            "icon": "mastodon-primary",
+            "icon": "mastodon",
             "value": "https://mastodon.social/@ssahillppatell"
         },
         {
             "name": "github",
-            "icon": "github-primary",
+            "icon": "github",
             "value": "https://www.github.com/ssahillppatell"
+        }
+    ],
+    "projects": [
+        {
+            "title": "DRL via KPMG",
+            "timeline": "jan'22 - jun'22",
+            "description": [
+                "Developed a software to validate csv, xls files and push the data to mongodb and making the data available via graphql api",
+                "Built the core of both the frontend & backend of the application in React + Node"
+            ],
+            "skills": ["React", "Node JS", "MongoDB", "GraphQL", "Elasticsearch", "Figma"]
+        },
+        {
+            "title": "Encome",
+            "timeline": "feb'22 - apr'22",
+            "link": "https://encome.io",
+            "description": [
+                "Worked on integrating smallcase with the existing product to allow users to import stock holdings from various brokers",
+                "Redesigned the dashboard on Figma and implemented the same via React"
+            ],
+            "skills": ["React", "Figma", "Python"]
+        },
+        {
+            "title": "NPP Salesforce Backup",
+            "timeline": "nov'21 - jan'22",
+            "description": [
+                "Implemented the design given to me using Vue3 and Tailwind",
+                "Integrated the frontend with the backend apis, which involved displaying paginated tables created from the csv file fetched from the cloud storage"
+            ],
+            "skills": ["Vue JS", "Tailwind CSS", "Figma"]
+        },
+        {
+            "title": "Billion Apps",
+            "timeline": "jul'21 - sep'21",
+            "description": [
+                "Worked as a React consultant for the company",
+                "Reviewed code and helped in timely delivery of the deliverables"
+            ],
+            "skills": ["React"]
+        },
+        {
+            "title": "Menuhub",
+            "timeline": "feb'21 - jan'22",
+            "link": "https://www.linkedin.com/company/menuhub-india/about/",
+            "description": [
+                "Developed a QR menu system for restaurant from scratch",
+                "Worked on the UI/UX of the application using Figma, built multiple iterations",
+                "Mostly worked on frontend side of the application using Vue3 and scss"
+            ],
+            "skills": ["Vue JS", "Typescript", "Figma", "Node JS", "Tailwind CSS", "Scss"]
+        },
+        {
+            "title": "Subira",
+            "timeline": "july'21 - dec'21",
+            "link": "https://subirapro.com",
+            "description": [
+                "Worked on Architectre design for a online pdf signing application",
+                "Led the design and frontend team of 4 people",
+                "Built the core frontend using React, tailwind, redux and scss"
+            ],
+            "skills": ["React", "Tailwind CSS", "Node JS", "Figma", "Azure", "Python", "Scss"]
+        },
+        {
+            "title": "Graphic Tab Config App",
+            "timeline": "mar'21 - apr'21",
+            "link": "https://github.com/ssahillppatell/Customizable-Huion-Tablets-Configuration-for-Linux",
+            "description": [
+                "Developed a deb & rpm package that enables linux user to configure buttons of their huion graphic tablet (as they don't provide native drivers for linux)",
+                "Used Python Tkinter for the GUI"
+            ],
+            "skills": ["Python"]
+        },
+        {
+            "title": "Cross Platform Jamboard",
+            "timeline": "feb'21 - mar'21",
+            "link": "https://github.com/kunaltawatia/the-board",
+            "description": [
+                "Created a browser extension, website & desktop app for people in a google meet to have a common place to scribble out their ideas and thoughts",
+                "Published the extension on Chrome Web Store (800 concurrent users in 30 days, taken down due to the cost of hosting)"
+            ],
+            "skills": ["Vue JS", "Node JS", "Figma", "Docker"]
         }
     ]
 }
