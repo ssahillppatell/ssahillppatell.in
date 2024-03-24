@@ -9,8 +9,24 @@ export default {
 			colors: {
 				offWhite: '#FAF9F6',
 				primary: '#5B98F4'
+			},
+			keyframes: {
+				jiggle: {
+					'0%, 100%': {
+						transform: 'translateX(0)',
+					},
+					'50%': {
+						transform: 'translateX(-10px)',
+					},
+					"100%": {
+						transform: "translateX(0)"
+					}
+				},
+			},
+			animation: {
+				jiggle: 'jiggle 1s ease-in-out forwards 2',
 			}
-		},
+		}
 	},
 	plugins: [],
 }
