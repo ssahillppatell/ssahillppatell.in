@@ -64,13 +64,37 @@ import Layout from "../layouts/Main.astro";
             </form>
         </section>
     </article>
-
     <script>
+        import { Notyf } from 'notyf'
+        import 'notyf/notyf.min.css';
+
         const form = document.querySelector("form");
+        const notyf = new Notyf();
+
+        const apiUrl = import.meta.env.PUBLIC_ANON_MESSAGE_API_URL;
+
         form.addEventListener("submit", (e) => {
             e.preventDefault();
             const message = form.querySelector("textarea").value;
-            console.log(message);
+
+            fetch(apiUrl, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    message
+                }),
+            })
+            .then((res) => {
+                if (res.ok) {
+                    notyf.success("message sent successfully!");
+                    form.reset();
+                } else {
+                    notyf.error("message failed to send!");
+                }
+            })
+            .catch((err) => console.error(err));
         });
     </script>
 </Layout>
