@@ -23,7 +23,7 @@ jobs:
       - name: Print API URL
         run: echo $PUBLIC_ANON_MESSAGE_API_URL
         env:
-          PUBLIC_ANON_MESSAGE_API_URL: ${{ vars.PUBLIC_ANON_MESSAGE_API_URL }}
+          PUBLIC_ANON_MESSAGE_API_URL: ${{ env.PUBLIC_ANON_MESSAGE_API_URL }}
       - name: Install, build, and upload your site
         uses: withastro/action@v2
         env:
