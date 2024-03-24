@@ -69,7 +69,12 @@ import Layout from "../layouts/Main.astro";
         import 'notyf/notyf.min.css';
 
         const form = document.querySelector("form");
-        const notyf = new Notyf();
+        const notyf = new Notyf({
+            position: {
+                x: "right",
+                y: "top"
+            }
+        });
 
         const apiUrl = import.meta.env.PUBLIC_ANON_MESSAGE_API_URL;
 
