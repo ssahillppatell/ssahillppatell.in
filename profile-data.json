@@ -205,6 +205,10 @@
     ],
     "experiences": [
         {
+            "title": "Looking for a job",
+            "company": "Any remote friendly company"
+        },
+        {
             "title": "SDE Fullstack",
             "company": "DP World",
             "date_of_joining": "2022-07-01",

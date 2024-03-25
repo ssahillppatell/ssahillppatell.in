@@ -12,7 +12,10 @@ const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
                 <section class="relative grid grid-cols-2 grid-rows-1">
                     <p class={`pt-2 row-start-1 text-center ${index % 2 ? 'col-start-2' : 'col-start-1'}`}>
                         {
-                            months[new Date(experience.date_of_joining).getMonth()]}&nbsp;{new Date(experience.date_of_joining).getFullYear()
+                            experience.date_of_joining ? `${months[new Date(experience.date_of_joining).getMonth()]} ${new Date(experience.date_of_joining).getFullYear()}` : 'present'
+                        }
+                        {
+                            experience.date_of_leaving ? ` - ${months[new Date(experience.date_of_leaving).getMonth()]} ${new Date(experience.date_of_leaving).getFullYear()}` : ' - present'
                         }
                     </p>
                     <div class={index % 2 ? 'col-start-1 text-right pr-4' : 'pl-6'}>
@@ -20,7 +23,7 @@ const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
                         <h3 class="font-semibold">{experience.company}</h3>
                         <div class={`flex flex-wrap gap-x-1 ${index % 2 ? 'justify-end' : ''}`}>
                             {
-                                experience.skills.map(skill => (
+                                experience.skills?.map(skill => (
                                     <img src={`/icons/${skill}.svg`} class="w-10 h-10 sm:w-12 sm:h-12" alt={skill} />
                                 ))
                             }
