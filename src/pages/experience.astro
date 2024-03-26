@@ -6,11 +6,11 @@ const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 ---
 
 <Layout title="experience">
-    <article class="relative flex flex-col gap-20 sm:gap-18 sm:w-1/3 mx-6 sm:mx-auto min-h-screen pt-6 z-0">
+    <article class="relative flex flex-col gap-20 sm:gap-18 sm:w-1/3 mx-6 sm:mx-auto min-h-screen pt-6 pb-8 z-0">
         {
             globalThis.profileData.experiences.map((experience, index) => (
                 <section class="relative grid grid-cols-2 grid-rows-1">
-                    <p class={`pt-2 row-start-1 text-center ${index % 2 ? 'col-start-2' : 'col-start-1'}`}>
+                    <p class={`pt-2 row-start-1 text-center w-3/4 m-auto ${index % 2 ? 'col-start-2' : 'col-start-1'}`}>
                         {
                             experience.date_of_joining ? `${months[new Date(experience.date_of_joining).getMonth()]} ${new Date(experience.date_of_joining).getFullYear()}` : 'present'
                         }

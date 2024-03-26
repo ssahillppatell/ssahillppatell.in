@@ -11,6 +11,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to Customise for you needs?
+## 👀 Want to Customise for your needs?
 
-Just edit `profile-data.json` file
+- Just edit `profile-data.json` file
+- Replace resume & emails
