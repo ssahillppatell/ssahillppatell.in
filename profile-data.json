@@ -1,6 +1,7 @@
 {
     "name": "Sahil Patel",
     "bio": "making and breaking software & hardware",
+    "email": "ssahillppatell+in@gmail.com",
     "socials": [
         {
             "name": "GitHub",
@@ -256,6 +257,7 @@
         {
             "title": "DRL via KPMG",
             "timeline": "jan'22 - jun'22",
+            "company": "Mathrithms",
             "description": [
                 "Developed a software to validate csv, xls files and push the data to mongodb and making the data available via graphql api",
                 "Built the core of both the frontend & backend of the application in React + Node"
@@ -265,6 +267,7 @@
         {
             "title": "Encome",
             "timeline": "feb'22 - apr'22",
+            "company": "Mathrithms",
             "link": "https://encome.io",
             "description": [
                 "Worked on integrating smallcase with the existing product to allow users to import stock holdings from various brokers",
@@ -275,6 +278,7 @@
         {
             "title": "NPP Salesforce Backup",
             "timeline": "nov'21 - jan'22",
+            "company": "Mathrithms",
             "description": [
                 "Implemented the design given to me using Vue3 and Tailwind",
                 "Integrated the frontend with the backend apis, which involved displaying paginated tables created from the csv file fetched from the cloud storage"
@@ -284,6 +288,7 @@
         {
             "title": "Billion Apps",
             "timeline": "jul'21 - sep'21",
+            "company": "Mathrithms",
             "description": [
                 "Worked as a React consultant for the company",
                 "Reviewed code and helped in timely delivery of the deliverables"
@@ -293,6 +298,7 @@
         {
             "title": "Menuhub",
             "timeline": "feb'21 - jan'22",
+            "company": "Mathrithms",
             "link": "https://www.linkedin.com/company/menuhub-india/about/",
             "description": [
                 "Developed a QR menu system for restaurant from scratch",
@@ -304,6 +310,7 @@
         {
             "title": "Subira",
             "timeline": "july'21 - dec'21",
+            "company": "Mathrithms",
             "link": "https://subirapro.com",
             "description": [
                 "Worked on Architectre design for a online pdf signing application",
@@ -313,8 +320,21 @@
             "skills": ["React", "Tailwind CSS", "Node JS", "Figma", "Azure", "Python", "Scss"]
         },
         {
+            "title": "Engineering Times",
+            "timeline": "may'21 - jun'21",
+            "company": "Mathrithms",
+            "link": "https://engineeringtimes.in",
+            "description": [
+                "Developed a news portal for engineering students",
+                "Worked on the frontend using Vue3 and scss",
+                "Designed the UI/UX of the application using Adobe XD""
+            ],
+            "skills": ["Vue JS", "Scss", "Adobe XD"]
+        },
+        {
             "title": "Graphic Tab Config App",
             "timeline": "mar'21 - apr'21",
+            "company": "Personal Project",
             "link": "https://github.com/ssahillppatell/Customizable-Huion-Tablets-Configuration-for-Linux",
             "description": [
                 "Developed a deb & rpm package that enables linux user to configure buttons of their huion graphic tablet (as they don't provide native drivers for linux)",
@@ -325,6 +345,7 @@
         {
             "title": "Cross Platform Jamboard",
             "timeline": "feb'21 - mar'21",
+            "company": "Personal Project",
             "link": "https://github.com/kunaltawatia/the-board",
             "description": [
                 "Created a browser extension, website & desktop app for people in a google meet to have a common place to scribble out their ideas and thoughts",
