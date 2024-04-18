@@ -255,6 +255,42 @@
     ],
     "projects": [
         {
+            "title": "Control Tower",
+            "timeline": "dec'23 - present",
+            "company": "DP World",
+            "description": [
+                "Worked on building the Phase 1 of the product as the part core developers working on frontend",
+                "Developed multiple reusable components and views",
+                "Had a unit test coverage of ~80% for all the work I did"
+            ],
+            "skills": ["Javascript", "Typescript", "React", "Next JS", "Scss"]
+        },
+        {
+            "title": "Argus",
+            "timeline": "jul'22 - present",
+            "company": "DP World",
+            "description": [
+                "Migrated the project from a VM deployment to Kubernetes deployment",
+                "Patched multiple bugs plaguing the project, increasing the availability of Argus to 99.99% and revamped the frontend to adhere to the design system",
+                "Migrated the application from Node 12 to Node 18, alongside removing multiple dormant libraries from the project, thus reducing build size of frontend",
+                "Streamlined the CI/CD process in Azure Devops and introduced a new dev deployment for fast reiterations while development",
+                "Created UI Designs in Figma for all the new features while including feedback from the stakeholders"
+            ],
+            "skills": ["Node JS", "Javascript", "Typescript", "React", "Next JS", "PostgreSQL", "Docker", "Figma", "daVinci Resolve"]
+        },
+        {
+            "title": "Portfolio website",
+            "timeline": "mar'24",
+            "company": "Personal Project",
+            "link": "https://ssahillppatell.in",
+            "description": [
+                "Developed a portfolio website using Astro and Tailwind",
+                "Designed the UI/UX of the application using Figma",
+                "Created & Integrated a Telegram bot for anonymous feedback"
+            ],
+            "skills": ["Astro JS", "Tailwind CSS", "Figma", "Node JS", "Golang", "Nginx"]
+        },
+        {
             "title": "DRL via KPMG",
             "timeline": "jan'22 - jun'22",
             "company": "Mathrithms",

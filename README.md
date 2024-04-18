@@ -14,4 +14,4 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to Customise for your needs?
 
 - Just edit `profile-data.json` file
-- Replace resume & emails
+- Replace resume
