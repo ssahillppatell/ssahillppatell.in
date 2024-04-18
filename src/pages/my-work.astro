@@ -10,7 +10,7 @@ import Layout from "../layouts/Main.astro";
                     <section class="flex flex-col border-primary border rounded">
                         <div class="relative bg-primary px-4 py-2 text-white">
                             <h4 class="text-lg font-bold">{project.title}</h4>
-                            <p class="text-sm font-light">{project.timeline}</p>
+                            <p class="text-sm font-light">{project.company} | {project.timeline}</p>
                             {project.link ? (
                                 <a href={project.link} target="_blank" class="absolute right-4 top-0 translate-y-1/2">
                                     <svg
